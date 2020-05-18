@@ -19,7 +19,7 @@ getData();
 async function getData(){
 
 	//const bag = [];
-    const response = await fetch("https://bitome.github.io/test2/animal.csv");
+    const response = await fetch("https://raw.githubusercontent.com/bitome/test2/gh-pages/animal.csv");
     const data = await response.text();
     
     const species = data.split(',');
